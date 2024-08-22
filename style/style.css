@@ -6,17 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    
     color: #333;
     line-height: 1.6;
-    padding-top: 60px; /* Ensures content starts below the navbar */
+    padding-top: 60px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 30px; /* Reduced top and bottom padding */
+    padding: 5px 30px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -26,7 +25,7 @@ body {
 }
 
 .navbar img {
-    width: 90px; /* Logo size */
+    width: 90px;
     margin-top: -10px;
 }
 
@@ -35,33 +34,31 @@ body {
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    margin-left: -90px; /* Adjusted margin */
+    margin: 0;
 }
 
 .navbar li {
-    margin: 0 10px; /* Margin between list items */
+    margin: 0 10px;
 }
 
 .navbar a {
     text-decoration: none;
     color: #000000;
-    font-size: 16px; /* Font size */
-    padding: 4px 8px; /* Padding around links */
+    font-size: 16px;
+    padding: 4px 8px;
     transition: color 0.3s, background-color 0.3s;
 }
 
 .navbar a:hover {
     color: #036710;
-    /* background-color: #137606; */
     border-radius: 5px;
 }
 
 .header {
     background-color: #f5f5f5;
-    margin-top: 20px; /* Added margin to move content below the navbar */
+    margin-top: 20px;
     padding: 50px;
-    text-align: left; /* Align text and image as before */
-
+    text-align: left;
 }
 
 .header img {
@@ -85,32 +82,49 @@ body {
 .header .main-idea p {
     margin-top: 20px;
     font-weight: bolder;
-    font-family:inherit;
+    font-family: inherit;
     padding: 5px;
     font-size: 20px;
 }
-.header p{
+
+.header p {
     font-weight: bolder;
     padding: 5px;
     font-size: 20px;
+}
 
+.rec {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 5px 0;
 }
-.rec-shape img{
+
+.rec-shape, .reviews-rec, .rewarding-rec, .team-members-rec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; /* Adjust spacing between each image container */
+}
+
+.rec-shape img, .reviews-rec img, .rewarding-rec img, .team-members-rec img {
     width: 90px;
-    margin-top: 55px;
-    margin-left: 220px;
+    margin-bottom: 4px; /* Reduced spacing between image and text */
 }
-.rec-shape h2{
-    margin-top: -10px;
-    margin-left: 215px;
+
+.rec-shape .text, .reviews-rec .text, .rewarding-rec .text {
+    text-align: center;
+}
+
+.rec-shape h2, .reviews-rec .text h2, .rewarding-rec .text h2 {
     font-size: 45px;
     color: darkturquoise;
-}
-.rec-shape h2 span{
-    color: black;
-}
-.rec-shape h3{
-    margin-left: 210px;
-    margin-top: 0px;
+    margin: 0;
 }
 
+.rec-shape h2 span, .reviews-rec .text h2 span, .rewarding-rec .text h2 span {
+    color: black;
+}
+
+.rec-shape h3, .reviews-rec .text h3, .rewarding-rec .text h3 {
+    margin: 0;
+}
