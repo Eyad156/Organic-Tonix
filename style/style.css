@@ -66,6 +66,7 @@ body {
     float: right;
     margin-left: 20px;
     margin-top: 20px;
+    border-radius: 8px;
 }
 
 .header h1 {
@@ -116,17 +117,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; /* Create a context for absolutely positioned elements */
-    z-index: 1; /* Ensure these are above the background */
+    position: relative; 
+    z-index: 1; 
 }
 
 .rec-shape img, .reviews-rec img, .rewarding-rec img, .team-members-rec img {
-    width: 90px; /* Adjust image size as needed */
+    width: 90px; 
 }
 
 .rec-shape .text, .reviews-rec .text, .rewarding-rec .text, .team-members-rec .text {
     text-align: center;
-    color: #fff; /* Ensure text is readable on the dark background */
+    color: #fff; 
 }
 
 .rec-shape h2, .reviews-rec .text h2, .rewarding-rec .text h2, .team-members-rec .text h2 {
@@ -141,4 +142,38 @@ body {
 
 .rec-shape h3, .reviews-rec .text h3, .rewarding-rec .text h3, .team-members-rec .text h3 {
     margin: 0;
+}
+.service h4 {
+    color: darkcyan;
+    margin-left: 120px;
+    font-size: 20px;
+    margin-top: 120px;
+    font-family:sans-serif;
+}
+.service h2 {
+    font-size: 45px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: bold;
+    margin-left: 116px;
+}
+.service h2 span{
+    color: rgb(6, 107, 108);
+}
+.right-straight-line {
+    border-bottom: 5px solid darkcyan;
+    width: 75px;
+    margin-left: 115px;
+}
+.we-do img {
+        width: 320px;
+        margin-left: 600px;
+        margin-top: -70px;
+        /* border-radius: 7px; */
+}
+.we-do-2 img{
+    width: 320px;
+    margin-left: 950px;
+    margin-top: -70px;
+
 }
