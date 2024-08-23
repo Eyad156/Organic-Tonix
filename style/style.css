@@ -94,37 +94,51 @@ body {
 }
 
 .rec {
-    display: flex;
-    justify-content: space-between;
-    margin: 100px 5px 0;
+    background: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 100%), /* Darker background on the right */
+        linear-gradient(to right, rgba(0, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), /* Gradient from cyan to black */
+        url('/img/portrait.png'); /* Background photo */
+    background-size: cover, cover, cover; /* Ensure all backgrounds cover the section */
+    background-position: left center, center center, center center; /* Position backgrounds appropriately */
+    background-blend-mode: overlay, normal; /* Blend gradients with the image */
+    display: flex; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin: 0; /* Remove top margin */
+    gap: 50px; /* Space between images */
+    padding: 0 10px; /* Reduced side padding to avoid excessive space */
+    height: 300px; /* Adjusted height to decrease the section size */
+    position: relative; /* Position context for absolutely positioned children */
 }
+
 
 .rec-shape, .reviews-rec, .rewarding-rec, .team-members-rec {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px; /* Adjust spacing between each image container */
+    position: relative; /* Create a context for absolutely positioned elements */
+    z-index: 1; /* Ensure these are above the background */
 }
 
 .rec-shape img, .reviews-rec img, .rewarding-rec img, .team-members-rec img {
-    width: 90px;
-    margin-bottom: 4px; /* Reduced spacing between image and text */
+    width: 90px; /* Adjust image size as needed */
 }
 
-.rec-shape .text, .reviews-rec .text, .rewarding-rec .text {
+.rec-shape .text, .reviews-rec .text, .rewarding-rec .text, .team-members-rec .text {
     text-align: center;
+    color: #fff; /* Ensure text is readable on the dark background */
 }
 
-.rec-shape h2, .reviews-rec .text h2, .rewarding-rec .text h2 {
+.rec-shape h2, .reviews-rec .text h2, .rewarding-rec .text h2, .team-members-rec .text h2 {
     font-size: 45px;
     color: darkturquoise;
     margin: 0;
 }
 
-.rec-shape h2 span, .reviews-rec .text h2 span, .rewarding-rec .text h2 span {
-    color: black;
+.rec-shape h2 span, .reviews-rec .text h2 span, .rewarding-rec .text h2 span, .team-members-rec .text h2 span {
+    color: rgb(255, 255, 255);
 }
 
-.rec-shape h3, .reviews-rec .text h3, .rewarding-rec .text h3 {
+.rec-shape h3, .reviews-rec .text h3, .rewarding-rec .text h3, .team-members-rec .text h3 {
     margin: 0;
 }
