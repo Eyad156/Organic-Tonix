@@ -169,11 +169,13 @@ body {
         width: 320px;
         margin-left: 600px;
         margin-top: -70px;
-        /* border-radius: 7px; */
+        border-radius: 7px;
+
 }
 .we-do-2 img{
     width: 320px;
     margin-left: 950px;
     margin-top: -70px;
+    border-radius: 7px;
 
 }
